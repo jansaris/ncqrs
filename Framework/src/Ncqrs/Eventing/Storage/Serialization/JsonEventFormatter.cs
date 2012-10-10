@@ -3,6 +3,7 @@ using System.Diagnostics.Contracts;
 using Ncqrs.Eventing.Sourcing;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Serialization;
 
 namespace Ncqrs.Eventing.Storage.Serialization
 {
@@ -26,7 +27,7 @@ namespace Ncqrs.Eventing.Storage.Serialization
             Contract.Requires<ArgumentNullException>(typeResolver != null, "typeResolver");
 
             _typeResolver = typeResolver;
-            _serializer = new JsonSerializer();
+            _serializer = new JsonSerializer { ContractResolver = NcqrsEnvironment.Get<IContractResolver>() };
         }
 
         public object Deserialize(JObject obj, string eventName)
