@@ -31,12 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\lib\ThirdParty\log4net\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Ncqrs">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\lib\$(Configuration)\Ncqrs\Ncqrs.dll</HintPath>
-    </Reference>
-    <Reference Include="log4net">
-      <HintPath>..\..\..\lib\ThirdParty\log4net\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Ncqrs.NServiceBus">
       <SpecificVersion>False</SpecificVersion>
