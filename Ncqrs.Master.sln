@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{086A35E7-E3B8-449E-83A3-25A540148B86}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{4EAA1C9A-E268-4BA7-A73E-940E3D769C3A}"
@@ -173,9 +175,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ncqrs.Eventing.Sourcing.Snapshotting.DynamicSnapshot.Tests", "Extensions\src\Ncqrs.Eventing.Sourcing.Snapshotting.DynamicSnapshot.Tests\Ncqrs.Eventing.Sourcing.Snapshotting.DynamicSnapshot.Tests.csproj", "{85073A89-CC13-44E2-B8C2-FB0B638B60F7}"
 EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = Ncqrs.Master.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -709,5 +708,8 @@ Global
 		{ECE2E2E8-648C-4561-82A0-9A1D6A2D4645} = {E7C55656-EC73-4802-9ED4-1BC321C86ABA}
 		{7A3419B2-588C-416B-A9F3-BFAE77C22D77} = {E7C55656-EC73-4802-9ED4-1BC321C86ABA}
 		{2489CF5D-6CEE-44C7-825D-521383275DB7} = {E7C55656-EC73-4802-9ED4-1BC321C86ABA}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Ncqrs.Master.vsmdi
 	EndGlobalSection
 EndGlobal
