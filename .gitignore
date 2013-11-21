@@ -42,3 +42,4 @@ release
 #migration reports
 /Backup*/*
 _UpgradeReport_Files/*
+/UpgradeLog.htm
