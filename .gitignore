@@ -40,5 +40,5 @@ release
 *.dotCover
 
 #migration reports
-/Backup/*
+/Backup*/*
 _UpgradeReport_Files/*
